@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>边框动画 | CSS Tricks</title>
+    <meta name="description" content="记录常用的 CSS 技巧">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.f4cc9ba4.css" as="style"><link rel="preload" href="/assets/js/app.22cac500.js" as="script"><link rel="preload" href="/assets/js/9.f5ecaf4c.js" as="script"><link rel="prefetch" href="/assets/js/10.7e167a1f.js"><link rel="prefetch" href="/assets/js/11.bf4706d2.js"><link rel="prefetch" href="/assets/js/12.dcf0ccea.js"><link rel="prefetch" href="/assets/js/13.f121a3d6.js"><link rel="prefetch" href="/assets/js/14.4cc3dd39.js"><link rel="prefetch" href="/assets/js/15.3a3331c3.js"><link rel="prefetch" href="/assets/js/16.73909417.js"><link rel="prefetch" href="/assets/js/17.bd0f73d4.js"><link rel="prefetch" href="/assets/js/18.a3bbc409.js"><link rel="prefetch" href="/assets/js/19.a4cbb856.js"><link rel="prefetch" href="/assets/js/2.858121b7.js"><link rel="prefetch" href="/assets/js/20.6e7b0043.js"><link rel="prefetch" href="/assets/js/21.409df63c.js"><link rel="prefetch" href="/assets/js/22.c5fc6ccb.js"><link rel="prefetch" href="/assets/js/3.b29934fd.js"><link rel="prefetch" href="/assets/js/4.c9e6ee0d.js"><link rel="prefetch" href="/assets/js/5.afcc1839.js"><link rel="prefetch" href="/assets/js/6.4a1e4cf7.js"><link rel="prefetch" href="/assets/js/7.dcca3d87.js"><link rel="prefetch" href="/assets/js/8.aca3d408.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.f4cc9ba4.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">CSS Tricks</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><a href="https://github.com/onecun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">主页</a></div><div class="nav-item"><a href="https://github.com/onecun" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/" class="sidebar-link">首页</a></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>技巧</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/tricks/vertical-middle/" class="sidebar-link">垂直居中</a></li><li><a href="/tricks/horizontal-middle/" class="sidebar-link">水平居中</a></li><li><a href="/tricks/layout/three/" class="sidebar-link">三栏布局</a></li><li><a href="/tricks/layout/two/" class="sidebar-link">两栏布局</a></li><li><a href="/tricks/sticky-footor/" class="sidebar-link">底部自适应</a></li><li><a href="/tricks/ellipsis/" class="sidebar-link">文字超出显示省略号</a></li><li><a href="/tricks/glass/" class="sidebar-link">毛玻璃效果</a></li><li><a href="/tricks/line-break/" class="sidebar-link">插入换行</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading open"><span>动画</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/animation/tab/" class="sidebar-link">tab-栏 追随动画</a></li><li><a href="/animation/accordion/" class="sidebar-link">手风琴动画</a></li><li><a href="/animation/border/" class="active sidebar-link">边框动画</a></li><li><a href="/animation/loading/" class="sidebar-link">加载动画</a></li></ul></div></li><li><div class="sidebar-group"><p class="sidebar-heading"><span>原理</span> <!----></p> <ul class="sidebar-group-items"><li><a href="/theory/css-animation/" class="sidebar-link">CSS 动画</a></li><li><a href="/theory/flex/" class="sidebar-link">flex</a></li><li><a href="/theory/grid/" class="sidebar-link">grid</a></li><li><a href="/theory/bfc/" class="sidebar-link">BFC 是什么</a></li><li><a href="/theory/box-shadow/" class="sidebar-link">box-shadow</a></li><li><a href="/theory/cursor/" class="sidebar-link">手型</a></li></ul></div></li></ul> </div> <div class="page"> <div class="content" data-v-3d794a94><h1 id="边框动画" data-v-3d794a94><a href="#边框动画" aria-hidden="true" class="header-anchor" data-v-3d794a94>#</a> 边框动画</h1> <div class="tip custom-block" data-v-3d794a94><p class="custom-block-title" data-v-3d794a94>TIP</p> <p data-v-3d794a94>主要是利用 <code data-v-3d794a94>transform: scale();</code> 完成此动画。<code data-v-3d794a94>input</code> 被 <code data-v-3d794a94>focus</code>时， <code data-v-3d794a94>scale(0)</code> -&gt; <code data-v-3d794a94>scale(1)</code>,  通过 <code data-v-3d794a94>transform-origin</code> 设置起点 <code data-v-3d794a94>center top bottom left right</code> 等。</p></div> <div class="wrap" data-v-3d794a94><div class="wrap-input" data-v-3d794a94><input type="text" placeholder="Input Outline" class="text" data-v-3d794a94> <span class="input-span bottom" data-v-3d794a94></span> <span class="input-span right" data-v-3d794a94></span> <span class="input-span top" data-v-3d794a94></span> <span class="input-span left" data-v-3d794a94></span></div></div> <div class="language-html extra-class" data-v-3d794a94><pre class="language-html" data-v-3d794a94><code data-v-3d794a94><span class="token tag" data-v-3d794a94><span class="token tag" data-v-3d794a94><span class="token punctuation" data-v-3d794a94>&lt;</span>div</span> <span class="token attr-name" data-v-3d794a94>class</span><span class="token attr-value" data-v-3d794a94><span class="token punctuation" data-v-3d794a94>=</span><span class="token punctuation" data-v-3d794a94>&quot;</span>wrap<span class="token punctuation" data-v-3d794a94>&quot;</span></span><span class="token punctuation" data-v-3d794a94>&gt;</span></span>
+    <span class="token tag" data-v-3d794a94><span class="token tag" data-v-3d794a94><span class="token punctuation" data-v-3d794a94>&lt;</span>input</span> <span class="token attr-name" data-v-3d794a94>type</span><span class="token attr-value" data-v-3d794a94><span class="token punctuation" data-v-3d794a94>=</span><span class="token punctuation" data-v-3d794a94>&quot;</span>text<span class="token punctuation" data-v-3d794a94>&quot;</span></span> <span class="token attr-name" data-v-3d794a94>placeholder</span><span class="token attr-value" data-v-3d794a94><span class="token punctuation" data-v-3d794a94>=</span><span class="token punctuation" data-v-3d794a94>&quot;</span>.text Outline<span class="token punctuation" data-v-3d794a94>&quot;</span></span><span class="token punctuation" data-v-3d794a94>&gt;</span></span>
+    <span class="token tag" data-v-3d794a94><span class="token tag" data-v-3d794a94><span class="token punctuation" data-v-3d794a94>&lt;</span>span</span> <span class="token attr-name" data-v-3d794a94>class</span><span class="token attr-value" data-v-3d794a94><span class="token punctuation" data-v-3d794a94>=</span><span class="token punctuation" data-v-3d794a94>&quot;</span>bottom<span class="token punctuation" data-v-3d794a94>&quot;</span></span><span class="token punctuation" data-v-3d794a94>&gt;</span></span><span class="token tag" data-v-3d794a94><span class="token tag" data-v-3d794a94><span class="token punctuation" data-v-3d794a94>&lt;/</span>span</span><span class="token punctuation" data-v-3d794a94>&gt;</span></span>
+    <span class="token tag" data-v-3d794a94><span class="token tag" data-v-3d794a94><span class="token punctuation" data-v-3d794a94>&lt;</span>span</span> <span class="token attr-name" data-v-3d794a94>class</span><span class="token attr-value" data-v-3d794a94><span class="token punctuation" data-v-3d794a94>=</span><span class="token punctuation" data-v-3d794a94>&quot;</span>right<span class="token punctuation" data-v-3d794a94>&quot;</span></span><span class="token punctuation" data-v-3d794a94>&gt;</span></span><span class="token tag" data-v-3d794a94><span class="token tag" data-v-3d794a94><span class="token punctuation" data-v-3d794a94>&lt;/</span>span</span><span class="token punctuation" data-v-3d794a94>&gt;</span></span>
+    <span class="token tag" data-v-3d794a94><span class="token tag" data-v-3d794a94><span class="token punctuation" data-v-3d794a94>&lt;</span>span</span> <span class="token attr-name" data-v-3d794a94>class</span><span class="token attr-value" data-v-3d794a94><span class="token punctuation" data-v-3d794a94>=</span><span class="token punctuation" data-v-3d794a94>&quot;</span>top<span class="token punctuation" data-v-3d794a94>&quot;</span></span><span class="token punctuation" data-v-3d794a94>&gt;</span></span><span class="token tag" data-v-3d794a94><span class="token tag" data-v-3d794a94><span class="token punctuation" data-v-3d794a94>&lt;/</span>span</span><span class="token punctuation" data-v-3d794a94>&gt;</span></span>
+    <span class="token tag" data-v-3d794a94><span class="token tag" data-v-3d794a94><span class="token punctuation" data-v-3d794a94>&lt;</span>span</span> <span class="token attr-name" data-v-3d794a94>class</span><span class="token attr-value" data-v-3d794a94><span class="token punctuation" data-v-3d794a94>=</span><span class="token punctuation" data-v-3d794a94>&quot;</span>left<span class="token punctuation" data-v-3d794a94>&quot;</span></span><span class="token punctuation" data-v-3d794a94>&gt;</span></span><span class="token tag" data-v-3d794a94><span class="token tag" data-v-3d794a94><span class="token punctuation" data-v-3d794a94>&lt;/</span>span</span><span class="token punctuation" data-v-3d794a94>&gt;</span></span>
+<span class="token tag" data-v-3d794a94><span class="token tag" data-v-3d794a94><span class="token punctuation" data-v-3d794a94>&lt;/</span>div</span><span class="token punctuation" data-v-3d794a94>&gt;</span></span>
+</code></pre></div><div class="language-scss extra-class" data-v-3d794a94><pre class="language-scss" data-v-3d794a94><code data-v-3d794a94><span class="token selector" data-v-3d794a94>&lt;style lang='scss' rel='stylesheet/scss' scoped&gt;
+.wrap </span><span class="token punctuation" data-v-3d794a94>{</span>
+    <span class="token property" data-v-3d794a94>position</span><span class="token punctuation" data-v-3d794a94>:</span> relative<span class="token punctuation" data-v-3d794a94>;</span>
+    <span class="token property" data-v-3d794a94>background-color</span><span class="token punctuation" data-v-3d794a94>:</span> #090821<span class="token punctuation" data-v-3d794a94>;</span>
+    <span class="token property" data-v-3d794a94>width</span><span class="token punctuation" data-v-3d794a94>:</span> 100px<span class="token punctuation" data-v-3d794a94>;</span>
+    <span class="token selector" data-v-3d794a94>.text </span><span class="token punctuation" data-v-3d794a94>{</span>
+        <span class="token property" data-v-3d794a94>width</span><span class="token punctuation" data-v-3d794a94>:</span> 100%<span class="token punctuation" data-v-3d794a94>;</span>
+        <span class="token property" data-v-3d794a94>color</span><span class="token punctuation" data-v-3d794a94>:</span> white<span class="token punctuation" data-v-3d794a94>;</span>
+        <span class="token property" data-v-3d794a94>font-size</span><span class="token punctuation" data-v-3d794a94>:</span> inherit<span class="token punctuation" data-v-3d794a94>;</span>
+        <span class="token property" data-v-3d794a94>font-family</span><span class="token punctuation" data-v-3d794a94>:</span> inherit<span class="token punctuation" data-v-3d794a94>;</span>
+        <span class="token property" data-v-3d794a94>background-color</span><span class="token punctuation" data-v-3d794a94>:</span> <span class="token function" data-v-3d794a94>hsl</span><span class="token punctuation" data-v-3d794a94>(</span>236<span class="token punctuation" data-v-3d794a94>,</span> 32%<span class="token punctuation" data-v-3d794a94>,</span> 26%<span class="token punctuation" data-v-3d794a94>)</span><span class="token punctuation" data-v-3d794a94>;</span>
+        <span class="token property" data-v-3d794a94>padding</span><span class="token punctuation" data-v-3d794a94>:</span> 10px<span class="token punctuation" data-v-3d794a94>;</span>
+        <span class="token property" data-v-3d794a94>box-sizing</span><span class="token punctuation" data-v-3d794a94>:</span> border-box<span class="token punctuation" data-v-3d794a94>;</span>
+        <span class="token property" data-v-3d794a94>border</span><span class="token punctuation" data-v-3d794a94>:</span> 1px solid transparent<span class="token punctuation" data-v-3d794a94>;</span>
+        <span class="token property" data-v-3d794a94>transition</span><span class="token punctuation" data-v-3d794a94>:</span> background-color 0.3s ease-in-out<span class="token punctuation" data-v-3d794a94>;</span>
+        <span class="token selector" data-v-3d794a94><span class="token parent important" data-v-3d794a94>&amp;</span>:focus </span><span class="token punctuation" data-v-3d794a94>{</span>
+            <span class="token property" data-v-3d794a94>outline</span><span class="token punctuation" data-v-3d794a94>:</span> none<span class="token punctuation" data-v-3d794a94>;</span>
+        <span class="token punctuation" data-v-3d794a94>}</span>
+        <span class="token selector" data-v-3d794a94><span class="token parent important" data-v-3d794a94>&amp;</span>::placeholder </span><span class="token punctuation" data-v-3d794a94>{</span>
+            <span class="token property" data-v-3d794a94>color</span><span class="token punctuation" data-v-3d794a94>:</span> <span class="token function" data-v-3d794a94>hsla</span><span class="token punctuation" data-v-3d794a94>(</span>0<span class="token punctuation" data-v-3d794a94>,</span> 0%<span class="token punctuation" data-v-3d794a94>,</span> 100%<span class="token punctuation" data-v-3d794a94>,</span> 0.6<span class="token punctuation" data-v-3d794a94>)</span><span class="token punctuation" data-v-3d794a94>;</span>
+        <span class="token punctuation" data-v-3d794a94>}</span>
+    <span class="token punctuation" data-v-3d794a94>}</span>
+
+    <span class="token selector" data-v-3d794a94>.input-span </span><span class="token punctuation" data-v-3d794a94>{</span>
+        <span class="token property" data-v-3d794a94>position</span><span class="token punctuation" data-v-3d794a94>:</span> absolute<span class="token punctuation" data-v-3d794a94>;</span>
+        <span class="token property" data-v-3d794a94>background-color</span><span class="token punctuation" data-v-3d794a94>:</span> #3cefff<span class="token punctuation" data-v-3d794a94>;</span>
+        <span class="token property" data-v-3d794a94>transition</span><span class="token punctuation" data-v-3d794a94>:</span> transform 0.5s ease<span class="token punctuation" data-v-3d794a94>;</span>
+    <span class="token punctuation" data-v-3d794a94>}</span>
+
+    <span class="token selector" data-v-3d794a94>.bottom,
+    .top </span><span class="token punctuation" data-v-3d794a94>{</span>
+        <span class="token property" data-v-3d794a94>height</span><span class="token punctuation" data-v-3d794a94>:</span> 1px<span class="token punctuation" data-v-3d794a94>;</span>
+        <span class="token property" data-v-3d794a94>left</span><span class="token punctuation" data-v-3d794a94>:</span> 0<span class="token punctuation" data-v-3d794a94>;</span>
+        <span class="token property" data-v-3d794a94>right</span><span class="token punctuation" data-v-3d794a94>:</span> 0<span class="token punctuation" data-v-3d794a94>;</span>
+        <span class="token property" data-v-3d794a94>transform</span><span class="token punctuation" data-v-3d794a94>:</span> <span class="token function" data-v-3d794a94>scaleX</span><span class="token punctuation" data-v-3d794a94>(</span>0<span class="token punctuation" data-v-3d794a94>)</span><span class="token punctuation" data-v-3d794a94>;</span>
+    <span class="token punctuation" data-v-3d794a94>}</span>
+
+    <span class="token selector" data-v-3d794a94>.left,
+    .right </span><span class="token punctuation" data-v-3d794a94>{</span>
+        <span class="token property" data-v-3d794a94>width</span><span class="token punctuation" data-v-3d794a94>:</span> 1px<span class="token punctuation" data-v-3d794a94>;</span>
+        <span class="token property" data-v-3d794a94>top</span><span class="token punctuation" data-v-3d794a94>:</span> 0<span class="token punctuation" data-v-3d794a94>;</span>
+        <span class="token property" data-v-3d794a94>bottom</span><span class="token punctuation" data-v-3d794a94>:</span> 0<span class="token punctuation" data-v-3d794a94>;</span>
+        <span class="token property" data-v-3d794a94>transform</span><span class="token punctuation" data-v-3d794a94>:</span> <span class="token function" data-v-3d794a94>scaleY</span><span class="token punctuation" data-v-3d794a94>(</span>0<span class="token punctuation" data-v-3d794a94>)</span><span class="token punctuation" data-v-3d794a94>;</span>
+    <span class="token punctuation" data-v-3d794a94>}</span>
+
+    <span class="token selector" data-v-3d794a94>.bottom </span><span class="token punctuation" data-v-3d794a94>{</span>
+        <span class="token property" data-v-3d794a94>bottom</span><span class="token punctuation" data-v-3d794a94>:</span> 0<span class="token punctuation" data-v-3d794a94>;</span>
+        <span class="token property" data-v-3d794a94>transform-origin</span><span class="token punctuation" data-v-3d794a94>:</span> bottom right<span class="token punctuation" data-v-3d794a94>;</span>
+    <span class="token punctuation" data-v-3d794a94>}</span>
+
+    <span class="token selector" data-v-3d794a94>.text:focus ~ .bottom </span><span class="token punctuation" data-v-3d794a94>{</span>
+        <span class="token property" data-v-3d794a94>transform-origin</span><span class="token punctuation" data-v-3d794a94>:</span> bottom left<span class="token punctuation" data-v-3d794a94>;</span>
+        <span class="token property" data-v-3d794a94>transform</span><span class="token punctuation" data-v-3d794a94>:</span> <span class="token function" data-v-3d794a94>scaleX</span><span class="token punctuation" data-v-3d794a94>(</span>1<span class="token punctuation" data-v-3d794a94>)</span><span class="token punctuation" data-v-3d794a94>;</span>
+    <span class="token punctuation" data-v-3d794a94>}</span>
+
+    <span class="token selector" data-v-3d794a94>.right </span><span class="token punctuation" data-v-3d794a94>{</span>
+        <span class="token property" data-v-3d794a94>right</span><span class="token punctuation" data-v-3d794a94>:</span> 0<span class="token punctuation" data-v-3d794a94>;</span>
+        <span class="token property" data-v-3d794a94>transform-origin</span><span class="token punctuation" data-v-3d794a94>:</span> top right<span class="token punctuation" data-v-3d794a94>;</span>
+    <span class="token punctuation" data-v-3d794a94>}</span>
+
+    <span class="token selector" data-v-3d794a94>.text:focus ~ .right </span><span class="token punctuation" data-v-3d794a94>{</span>
+        <span class="token property" data-v-3d794a94>transform-origin</span><span class="token punctuation" data-v-3d794a94>:</span> bottom right<span class="token punctuation" data-v-3d794a94>;</span>
+        <span class="token property" data-v-3d794a94>transform</span><span class="token punctuation" data-v-3d794a94>:</span> <span class="token function" data-v-3d794a94>scaleY</span><span class="token punctuation" data-v-3d794a94>(</span>1<span class="token punctuation" data-v-3d794a94>)</span><span class="token punctuation" data-v-3d794a94>;</span>
+    <span class="token punctuation" data-v-3d794a94>}</span>
+
+    <span class="token selector" data-v-3d794a94>.top </span><span class="token punctuation" data-v-3d794a94>{</span>
+        <span class="token property" data-v-3d794a94>top</span><span class="token punctuation" data-v-3d794a94>:</span> 0<span class="token punctuation" data-v-3d794a94>;</span>
+        <span class="token property" data-v-3d794a94>transform-origin</span><span class="token punctuation" data-v-3d794a94>:</span> top left<span class="token punctuation" data-v-3d794a94>;</span>
+    <span class="token punctuation" data-v-3d794a94>}</span>
+
+    <span class="token selector" data-v-3d794a94>.text:focus ~ .top </span><span class="token punctuation" data-v-3d794a94>{</span>
+        <span class="token property" data-v-3d794a94>transform-origin</span><span class="token punctuation" data-v-3d794a94>:</span> top right<span class="token punctuation" data-v-3d794a94>;</span>
+        <span class="token property" data-v-3d794a94>transform</span><span class="token punctuation" data-v-3d794a94>:</span> <span class="token function" data-v-3d794a94>scaleX</span><span class="token punctuation" data-v-3d794a94>(</span>1<span class="token punctuation" data-v-3d794a94>)</span><span class="token punctuation" data-v-3d794a94>;</span>
+    <span class="token punctuation" data-v-3d794a94>}</span>
+
+    <span class="token selector" data-v-3d794a94>.left </span><span class="token punctuation" data-v-3d794a94>{</span>
+        <span class="token property" data-v-3d794a94>left</span><span class="token punctuation" data-v-3d794a94>:</span> 0<span class="token punctuation" data-v-3d794a94>;</span>
+        <span class="token property" data-v-3d794a94>transform-origin</span><span class="token punctuation" data-v-3d794a94>:</span> bottom left<span class="token punctuation" data-v-3d794a94>;</span>
+    <span class="token punctuation" data-v-3d794a94>}</span>
+
+    <span class="token selector" data-v-3d794a94>.text:focus ~ .left </span><span class="token punctuation" data-v-3d794a94>{</span>
+        <span class="token property" data-v-3d794a94>transform-origin</span><span class="token punctuation" data-v-3d794a94>:</span> top left<span class="token punctuation" data-v-3d794a94>;</span>
+        <span class="token property" data-v-3d794a94>transform</span><span class="token punctuation" data-v-3d794a94>:</span> <span class="token function" data-v-3d794a94>scaleY</span><span class="token punctuation" data-v-3d794a94>(</span>1<span class="token punctuation" data-v-3d794a94>)</span><span class="token punctuation" data-v-3d794a94>;</span>
+    <span class="token punctuation" data-v-3d794a94>}</span>
+<span class="token punctuation" data-v-3d794a94>}</span>
+&lt;/style&gt;
+</code></pre></div></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/animation/accordion/" class="prev">
+          手风琴动画
+        </a></span> <span class="next"><a href="/animation/loading/">
+          加载动画
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/assets/js/app.22cac500.js" defer></script><script src="/assets/js/9.f5ecaf4c.js" defer></script>
+  </body>
+</html>
